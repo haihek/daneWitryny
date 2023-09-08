@@ -1,0 +1,24 @@
+﻿body {
+    background-color: #7A4F38
+}
+
+#big {
+    color: #FA7227;
+    font-size: 120px;
+    background-color: #7A3814;
+    text-align: center;
+    width: 50%;
+    transform: translateX(50%) translateY(10%);
+}
+
+#zam {
+    background-color:#FBA373;
+    width: 30%; 
+    transform:translateX(40%);
+}
+
+input {
+    color: #FBA373;
+    background-color: #7A3814;
+    border-radius: 18px;
+}
