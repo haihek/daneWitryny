@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <title>Kanapkarnia</title>
+    <link rel="stylesheet" href="styl.css" />
+
+    <script>
+        function wyswietlDane() {
+
+            console.log("--------- Chleb ---------")
+
+            var t1 = document.getElementById("Przenny").value;
+            if (document.getElementById('Przenny').checked) {
+                console.log("Przenny")
+            }
+            var t2 = document.getElementById("Bezgluten").value;
+            if (document.getElementById('Bezgluten').checked) {
+                console.log("Bezgluten")
+            }
+            var t3 = document.getElementById("Wloski").value;
+            if (document.getElementById('Wloski').checked) {
+                console.log("Wloski")
+            }
+
+
+            console.log("--------- Skladniki ---------")
+
+            var t1 = document.getElementById("kurczak").value;
+            if (document.getElementById('kurczak').checked) {
+                console.log("kurczak")
+            }
+            var t2 = document.getElementById("wolowina").value;
+            if (document.getElementById('wolowina').checked) {
+                console.log("wolowina")
+            }
+            var t3 = document.getElementById("ser").value;
+            if (document.getElementById('ser').checked) {
+                console.log("ser")
+            }     
+            var t3 = document.getElementById("salami").value;
+            if (document.getElementById('salami').checked) {
+                console.log("salami")
+            }   
+            var t3 = document.getElementById("jajo").value;
+            if (document.getElementById('jajo').checked) {
+                console.log("jajo")
+            }   
+            var t3 = document.getElementById("szynka").value;
+            if (document.getElementById('szynka').checked) {
+                console.log("szynka")
+            }   
+            var t3 = document.getElementById("ser").value;
+            if (document.getElementById('ser').checked) {
+                console.log("ser")
+            }   
+            var t3 = document.getElementById("feta").value;
+            if (document.getElementById('feta').checked) {
+                console.log("feta")
+            }   
+
+            console.log("--------- Dodatki ---------")
+
+            var t1 = document.getElementById("bbq").value;
+            if (document.getElementById('bbq').checked) {
+                console.log("bbq")
+            }
+            var t2 = document.getElementById("keczup").value;
+            if (document.getElementById('keczup').checked) {
+                console.log("keczup")
+            }
+            var t3 = document.getElementById("sosOstry").value;
+            if (document.getElementById('sosOstry').checked) {
+                console.log("sosOstry")
+            }
+            var t3 = document.getElementById("slodkaCebula").value;
+            if (document.getElementById('slodkaCebula').checked) {
+                console.log("slodkaCebula")
+            }
+            var t3 = document.getElementById("wieloziarnista").value;
+            if (document.getElementById('wieloziarnista').checked) {
+                console.log("wieloziarnista")
+            }
+            var t3 = document.getElementById("chili").value;
+            if (document.getElementById('chili').checked) {
+                console.log("chili")
+            }
+
+
+            console.log("--------- Picie ---------")
+
+            var t1 = document.getElementById("pepsiS").value;
+            if (document.getElementById('pepsiS').checked) {
+                console.log("pepsiS")
+            }
+            var t1 = document.getElementById("pepsiL").value;
+            if (document.getElementById('pepsiL').checked) {
+                console.log("pepsiL")
+            }
+
+            
+     }
+    </script>
+
+</head>
+
+<body id="test"> 
+    <br>
+    <div id = "big">
+        <p >Kanapkarnia</p>
+    </div>
+
+    <div id="zam">
+        <p style=" color:#7A3814; font-size:60px; text-align: center;">Zamówienie</p>
+
+        <form method="get" action="kanapka.php">
+            <b>ADRES</b>
+            <br> Miasto <input name="Miasto"><br> Ulica <input name="Ulica"><br> Dom/Mieszkanie <input name="DomMieszkanie"><br>
+            <br><br>
+            <b>Rodzaj chleba...</b><br>
+
+            Przenny<input type="Radio" name="chleb" checked="checked" id="Przenny" value="Przenny"><br>
+            Pieczywo bezglutenowe<input type="Radio" name="chleb" id="Bezgluten" value="Bezglutenowy"/><br>
+            W³oski jasny<input type="Radio" name="chleb" id="Wloski" value="Wloski"/><br><br>
+
+            <b>Sk³adniki:</b><br>
+            Paski z kurczaka<input type="checkbox" name="kurczak" id="kurczak">
+            Wo³owina<input type="checkbox" name="wolowina" id="wolowina">
+            Ser<input type="checkbox" name="ser" id="ser"><br>
+            Salami<input type="checkbox" name="salami" id="salami">
+            jajo gotowane<input type="checkbox" name="jajo" id="jajo">
+            Szynka<input type="checkbox" name="szynka" id="szynka"/><br>
+            Ser mozzarella<input type="checkbox" name="serB" id="ser"/>
+            Ser feta<input type="checkbox" name="feta" id="feta"/> <br>
+            <br>
+
+            <b>Sosy i dodatki!</b><br>
+            Sos BBQ<input type="checkbox" name="bbq" id="bbq">
+            Keczup<input type="checkbox" name="keczup" id="keczup">
+            Sos ostry<input type="checkbox" name="sosOstry" id="sosOstry"><br>
+            S³odka cebula<input type="checkbox" name="slodkaCebula" id="slodkaCebula">
+            Mieszanka wieloziarnista<input type="checkbox" name="wieloziarnista" id="wieloziarnista">
+            P³atki chilli<input type="checkbox" name="chili" id="chili"/><br><br>
+
+            <b>Coœ do picia?</b><br>
+            Pepsi ma³a<input type="Radio" name="picie" id="pepsiS" value="pepsi mala"><br>
+            Pepsi du¿a<input type="Radio" name="picie" id="pepsiL" value="pepsi duza"/><br>
+            Nie, dziêkujê.<input type="Radio" name="picie" checked="checked" value="brak"/><br><br><br><br>
+            <input type="submit" value="Zamów" onclick="wyswietlDane()">
+
+        </form>
+        </div>
+
+</body>
+
+</html>
